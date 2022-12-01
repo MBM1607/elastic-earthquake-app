@@ -64,18 +64,11 @@ router.get('/earthquakes', async (req, res) => {
         }
       );
 
-      if (EARTHQUAKES.data.length) {
-        indexData();
-
-      } else {
-        console.info('Data has been indexed successfully!');
-      }
+      console.info('Data has been indexed successfully!');
     }
     catch (error) {
       console.error(error);
     }
-
-    console.info('Preparing for the next round of indexing...');
   };
   indexData();
 });
