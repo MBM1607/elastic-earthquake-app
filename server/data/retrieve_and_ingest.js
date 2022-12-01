@@ -1,5 +1,4 @@
 import express from 'express';
-import 'log-timestamp';
 import client from '../elasticsearch/client.js';
 
 const router = express.Router();
