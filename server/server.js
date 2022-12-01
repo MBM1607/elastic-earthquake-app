@@ -1,4 +1,5 @@
 import express from 'express';
+import client from './elasticsearch/client.js';
 
 const app = express();
 
@@ -8,7 +9,3 @@ app.listen(
   port,
   () => console.log(`Server listening at http://localhost:${port}`)
 );
-
-app.get('/', (req, res) => {
-  return 'Hello, Express';
-});
